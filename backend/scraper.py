@@ -1,15 +1,8 @@
 import os
 import re
 import json
-
-from langchain_community.document_loaders import WebBaseLoader
-
-try:
-    from langchain_community.document_loaders import SeleniumURLLoader
-
-    SELENIUM_AVAILABLE = True
-except ImportError:
-    SELENIUM_AVAILABLE = False
+import requests
+from bs4 import BeautifulSoup
 
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
