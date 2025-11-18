@@ -1,0 +1,1327 @@
+
+[     UTC     ] Logs for business-directory-scraper-klbkqtqfuyds5vwsb9uijl.streamlit.app/
+────────────────────────────────────────────────────────────────────────────────────────
+[02:48:49] 🖥 Provisioning machine...
+[02:48:49] 🎛 Preparing system...
+[02:48:49] ⛓ Spinning up manager process...
+[02:48:49] 🚀 Starting up repository: 'business-directory-scraper', branch: 'main', main module: 'frontend/app.py'
+[02:48:49] 🐙 Cloning repository...
+[02:48:49] 🐙 Cloning into '/mount/src/business-directory-scraper'...
+
+[02:48:49] 🐙 Cloned repository!
+[02:48:49] 🐙 Pulling code changes from Github...
+[02:48:50] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:
+  ╰─▶ Because langchain==0.1.5 depends on langchain-core>=0.1.16,<0.2 and
+      langchain-huggingface==0.1.0 depends on langchain-core>=0.3.0,<0.4,
+      we can conclude that langchain==0.1.5 and langchain-huggingface==0.1.0
+      are incompatible.
+      And because you require langchain==0.1.5 and
+      langchain-huggingface==0.1.0, we can conclude that your requirements
+      are unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+Resolved 4 packages in 141ms
+Prepared 4 packages in 129ms
+Installed 4 packages in 13ms
+ + markdown-it-py==[2025-11-18 02:48:51.162114] 4.0.0
+ + mdurl==0.1.2
+ + pygments==2.19.2
+ + rich==14.2.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting langchain==0.1.5 (from -r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain-0.1.5-py3-none-any.whl.metadata (13 kB)
+Collecting langchain-community==0.0.20 (from -r /mount/src/business-directory-scraper/requirements.txt (line 2))
+  Downloading langchain_community-0.0.20-py3-none-any.whl.metadata (8.1 kB)
+Collecting langchain-groq==0.1.3 (from -r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading langchain_groq-0.1.3-py3-none-any.whl.metadata (2.8 kB)
+Collecting langchain-huggingface==0.1.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 4))
+  Downloading langchain_huggingface-0.1.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting langchain-text-splitters==0.0.1 (from -r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading langchain_text_splitters-0.0.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting streamlit>=1.28.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading streamlit-1.51.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting huggingface-hub>=0.17.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading huggingface_hub-1.1.4-py3-none-any.whl.metadata (13 kB)
+Collecting sentence-transformers>=2.2.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading sentence_transformers-5.1.2-py3-none-any.whl.metadata (16 kB)
+Collecting transformers>=4.30.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 6.1 MB/s eta 0:00:00
+Collecting requests>=2.31.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 10))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting beautifulsoup4>=4.12.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 11))
+  Downloading beautifulsoup4-4.14.2-py3-none-any.whl.metadata (3.8 kB)
+Collecting python-dotenv>=1.0.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting selenium>=4.15.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 13))
+  Downloading selenium-4.38.0-py3-none-any.whl.metadata (7.5 kB)
+Collecting PyYAML>=5.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting SQLAlchemy<3,>=1.4 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading sqlalchemy-2.0.44-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+Collecting aiohttp<4.0.0,>=3.8.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiohttp-3.13.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting dataclasses-json<0.7,>=0.5.7 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting jsonpatch<2.0,>=1.33 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-core<0.2,>=0.1.16 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain_core-0.1.53-py3-none-any.whl.metadata (5.9 kB)
+Collecting langsmith<0.1,>=0.0.83 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langsmith-0.0.92-py3-none-any.whl.metadata (9.9 kB)
+Collecting numpy<2,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading numpy-1.26.4.tar.gz (15.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.8/15.8 MB 37.7 MB/s eta 0:00:00[2025-11-18 02:48:56.132380] 
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): still running...
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting pydantic<3,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 kB 159.6 MB/s eta 0:00:00[2025-11-18 02:50:39.281014] 
+Collecting tenacity<9.0.0,>=8.1.0 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading tenacity-8.5.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting groq<1,>=0.4.1 (from langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading groq-0.34.1-py3-none-any.whl.metadata (16 kB)
+INFO: pip is looking at multiple versions of langchain-huggingface to determine which version is compatible with other requirements. This could take a while.
+ERROR: Cannot install -r /mount/src/business-directory-scraper/requirements.txt (line 1), -r /mount/src/business-directory-scraper/requirements.txt (line 2), -r /mount/src/business-directory-scraper/requirements.txt (line 3) and -r /mount/src/business-directory-scraper/requirements.txt (line 4) because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    langchain 0.1.5 depends on langchain-core<0.2 and >=0.1.16
+    langchain-community 0.0.20 depends on langchain-core<0.2 and >=0.1.21
+    langchain-groq 0.1.3 depends on langchain-core<0.2.0 and >=0.1.45
+    langchain-huggingface 0.1.0 depends on langchain-core<0.4 and >=0.3.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.4/243.4 kB 13.4 MB/s eta 0:00:00[2025-11-18 02:50:42.190245] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 154.7 MB/s eta 0:00:00[2025-11-18 02:50:42.202464] 
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 65.4 MB/s eta 0:00:00[2025-11-18 02:50:42.233222] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.2
+    Uninstalling Pygments-2.19.2:
+      Successfully uninstalled Pygments-2.19.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.2.0
+    Uninstalling rich-14.2.0:
+      Successfully uninstalled rich-14.2.0
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.19.2 rich-14.2.0
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[02:50:44] ❗️ installer returned a non-zero exit code
+[02:50:44] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
+[02:52:23] 🐙 Pulling code changes from Github...
+[02:52:24] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:
+  ╰─▶ Because langchain==0.1.5 depends on langchain-core>=0.1.16,<0.2 and
+      langchain-huggingface==0.1.0 depends on langchain-core>=0.3.0,<0.4,
+      we can conclude that langchain==0.1.5 and langchain-huggingface==0.1.0
+      are incompatible.
+      And because you require langchain==0.1.5 and
+      langchain-huggingface==0.1.0, we can conclude that your requirements
+      are unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.13.9 environment at /home/adminuser/venv
+Audited 1 package in 1ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting langchain==0.1.5 (from -r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain-0.1.5-py3-none-any.whl.metadata (13 kB)
+Collecting langchain-community==0.0.20 (from -r /mount/src/business-directory-scraper/requirements.txt (line 2))
+  Downloading langchain_community-0.0.20-py3-none-any.whl.metadata (8.1 kB)
+Collecting langchain-groq==0.1.3 (from -r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading langchain_groq-0.1.3-py3-none-any.whl.metadata (2.8 kB)
+Collecting langchain-huggingface==0.1.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 4))
+  Downloading langchain_huggingface-0.1.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting langchain-text-splitters==0.0.1 (from -r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading langchain_text_splitters-0.0.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting streamlit>=1.28.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading streamlit-1.51.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting huggingface-hub>=0.17.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading huggingface_hub-1.1.4-py3-none-any.whl.metadata (13 kB)
+Collecting sentence-transformers>=2.2.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading sentence_transformers-5.1.2-py3-none-any.whl.metadata (16 kB)
+Collecting transformers>=4.30.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 5.1 MB/s eta 0:00:00[2025-11-18 02:52:27.393937] 
+Collecting requests>=2.31.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 10))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting beautifulsoup4>=4.12.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 11))
+  Downloading beautifulsoup4-4.14.2-py3-none-any.whl.metadata (3.8 kB)
+Collecting python-dotenv>=1.0.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting selenium>=4.15.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 13))
+  Downloading selenium-4.38.0-py3-none-any.whl.metadata (7.5 kB)
+Collecting PyYAML>=5.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting SQLAlchemy<3,>=1.4 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading sqlalchemy-2.0.44-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+Collecting aiohttp<4.0.0,>=3.8.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiohttp-3.13.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting dataclasses-json<0.7,>=0.5.7 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting jsonpatch<2.0,>=1.33 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-core<0.2,>=0.1.16 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain_core-0.1.53-py3-none-any.whl.metadata (5.9 kB)
+Collecting langsmith<0.1,>=0.0.83 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langsmith-0.0.92-py3-none-any.whl.metadata (9.9 kB)
+Collecting numpy<2,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading numpy-1.26.4.tar.gz (15.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.8/15.8 MB 187.9 MB/s eta 0:00:00[2025-11-18 02:52:29.671315] 
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+[02:52:47] 🖥 Provisioning machine...
+[02:52:54] 🎛 Preparing system...
+[02:52:59] ⛓ Spinning up manager process...
+[02:53:06] 🎈 Inflating balloons...
+[02:53:11] 📖 Unpacking Comic Sans RAR files...
+[02:53:54] 🚧 Loading "Under construction" GIF...
+[02:53:12] 🚀 Starting up repository: 'business-directory-scraper', branch: 'main', main module: 'frontend/app.py'
+[02:53:12] 🐙 Cloning repository...
+[02:53:13] 🐙 Cloning into '/mount/src/business-directory-scraper'...
+
+[02:53:14] 🐙 Cloned repository!
+[02:53:14] 🐙 Pulling code changes from Github...
+[02:53:14] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:[2025-11-18 02:53:18.775855] 
+  ╰─▶ Because langchain==0.1.5 depends on langchain-core>=0.1.16,<0.2 and
+      langchain-huggingface==0.1.0 depends on langchain-core>=0.3.0,<0.4,
+      we can conclude that langchain==0.1.5 and langchain-huggingface==0.1.0
+      are incompatible.
+      And because you require langchain==0.1.5 and
+      langchain-huggingface==0.1.0, we can conclude that your requirements
+      are unsatisfiable.[2025-11-18 02:53:18.776797] 
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+Resolved 4 packages in 582ms
+Prepared 4 packages in 897ms
+Installed 4 packages in 146ms
+ + markdown-it-py==4.0.0
+ + mdurl==0.1.2
+ + pygments==2.19.2
+ + rich==14.2.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting langchain==0.1.5 (from -r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain-0.1.5-py3-none-any.whl.metadata (13 kB)
+Collecting langchain-community==0.0.20 (from -r /mount/src/business-directory-scraper/requirements.txt (line 2))
+  Downloading langchain_community-0.0.20-py3-none-any.whl.metadata (8.1 kB)
+Collecting langchain-groq==0.1.3 (from -r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading langchain_groq-0.1.3-py3-none-any.whl.metadata (2.8 kB)
+Collecting langchain-huggingface==0.1.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 4))
+  Downloading langchain_huggingface-0.1.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting langchain-text-splitters==0.0.1 (from -r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading langchain_text_splitters-0.0.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting streamlit>=1.28.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading streamlit-1.51.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting huggingface-hub>=0.17.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading huggingface_hub-1.1.4-py3-none-any.whl.metadata (13 kB)
+Collecting sentence-transformers>=2.2.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading sentence_transformers-5.1.2-py3-none-any.whl.metadata (16 kB)
+Collecting transformers>=4.30.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 70.9 MB/s eta 0:00:00
+Collecting requests>=2.31.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 10))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting beautifulsoup4>=4.12.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 11))
+  Downloading beautifulsoup4-4.14.2-py3-none-any.whl.metadata (3.8 kB)
+Collecting python-dotenv>=1.0.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting selenium>=4.15.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 13))
+  Downloading selenium-4.38.0-py3-none-any.whl.metadata (7.5 kB)
+Collecting PyYAML>=5.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting SQLAlchemy<3,>=1.4 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading sqlalchemy-2.0.44-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+Collecting aiohttp<4.0.0,>=3.8.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiohttp-3.13.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting dataclasses-json<0.7,>=0.5.7 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting jsonpatch<2.0,>=1.33 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-core<0.2,>=0.1.16 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain_core-0.1.53-py3-none-any.whl.metadata (5.9 kB)
+Collecting langsmith<0.1,>=0.0.83 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langsmith-0.0.92-py3-none-any.whl.metadata (9.9 kB)
+Collecting numpy<2,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 141.7 MB/s eta 0:00:00
+Collecting pydantic<3,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 kB 124.7 MB/s eta 0:00:00
+Collecting tenacity<9.0.0,>=8.1.0 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading tenacity-8.5.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting groq<1,>=0.4.1 (from langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading groq-0.34.1-py3-none-any.whl.metadata (16 kB)
+INFO: pip is looking at multiple versions of langchain-huggingface to determine which version is compatible with other requirements. This could take a while.
+
+The conflict is caused by:
+    langchain 0.1.5 depends on langchain-core<0.2 and >=0.1.16
+    langchain-community 0.0.20 depends on langchain-core<0.2 and >=0.1.21
+    langchain-groq 0.1.3 depends on langchain-core<0.2.0 and >=0.1.45
+    langchain-huggingface 0.1.0 depends on langchain-core<0.4 and >=0.3.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip attempt to solve the dependency conflict
+
+ERROR: Cannot install -r /mount/src/business-directory-scraper/requirements.txt (line 1), -r /mount/src/business-directory-scraper/requirements.txt (line 2), -r /mount/src/business-directory-scraper/requirements.txt (line 3) and -r /mount/src/business-directory-scraper/requirements.txt (line 4) because these package versions have conflicting dependencies.
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.4/243.4 kB 4.6 MB/s eta 0:00:00[2025-11-18 02:53:35.898494] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 7.6 MB/s eta 0:00:00[2025-11-18 02:53:35.973740] 
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 65.1 MB/s eta 0:00:00[2025-11-18 02:53:36.004998] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.2
+    Uninstalling Pygments-2.19.2:
+      Successfully uninstalled Pygments-2.19.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.2.0
+    Uninstalling rich-14.2.0:
+      Successfully uninstalled rich-14.2.0
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.19.2 rich-14.2.0
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[02:53:43] ❗️ installer returned a non-zero exit code
+[02:53:43] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
+[02:53:43] 🐙 Pulling code changes from Github...
+[02:53:43] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:[2025-11-18 02:53:44.576792] 
+  ╰─▶ Because langchain==0.1.5 depends on langchain-core>=0.1.16,<0.2 and
+      langchain-huggingface==0.1.0 depends on langchain-core>=0.3.0,<0.4,
+      we can conclude that langchain==0.1.5 and langchain-huggingface==0.1.0
+      are incompatible.
+      And because you require langchain==0.1.5 and
+      langchain-huggingface==0.1.0, we can conclude that your requirements
+      are unsatisfiable.
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+Audited 1 package in 1ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting langchain==0.1.5 (from -r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain-0.1.5-py3-none-any.whl.metadata (13 kB)
+Collecting langchain-community==0.0.20 (from -r /mount/src/business-directory-scraper/requirements.txt (line 2))
+  Downloading langchain_community-0.0.20-py3-none-any.whl.metadata (8.1 kB)
+Collecting langchain-groq==0.1.3 (from -r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading langchain_groq-0.1.3-py3-none-any.whl.metadata (2.8 kB)
+Collecting langchain-huggingface==0.1.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 4))
+  Downloading langchain_huggingface-0.1.0-py3-none-any.whl.metadata (1.3 kB)
+Collecting langchain-text-splitters==0.0.1 (from -r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading langchain_text_splitters-0.0.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting streamlit>=1.28.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading streamlit-1.51.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting huggingface-hub>=0.17.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading huggingface_hub-1.1.4-py3-none-any.whl.metadata (13 kB)
+Collecting sentence-transformers>=2.2.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading sentence_transformers-5.1.2-py3-none-any.whl.metadata (16 kB)
+Collecting transformers>=4.30.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 109.1 MB/s eta 0:00:00[2025-11-18 02:54:04.423361] 
+Collecting requests>=2.31.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 10))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting beautifulsoup4>=4.12.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 11))
+  Downloading beautifulsoup4-4.14.2-py3-none-any.whl.metadata (3.8 kB)
+Collecting python-dotenv>=1.0.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting selenium>=4.15.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 13))
+  Downloading selenium-4.38.0-py3-none-any.whl.metadata (7.5 kB)
+Collecting PyYAML>=5.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting SQLAlchemy<3,>=1.4 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading sqlalchemy-2.0.44-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+Collecting aiohttp<4.0.0,>=3.8.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiohttp-3.13.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting dataclasses-json<0.7,>=0.5.7 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting jsonpatch<2.0,>=1.33 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-core<0.2,>=0.1.16 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain_core-0.1.53-py3-none-any.whl.metadata (5.9 kB)
+Collecting langsmith<0.1,>=0.0.83 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langsmith-0.0.92-py3-none-any.whl.metadata (9.9 kB)
+Collecting numpy<2,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 135.0 MB/s eta 0:00:00[2025-11-18 02:54:10.089432] 
+Collecting pydantic<3,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 kB 131.3 MB/s eta 0:00:00[2025-11-18 02:54:10.498205] 
+Collecting tenacity<9.0.0,>=8.1.0 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading tenacity-8.5.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting groq<1,>=0.4.1 (from langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading groq-0.34.1-py3-none-any.whl.metadata (16 kB)
+INFO: pip is looking at multiple versions of langchain-huggingface to determine which version is compatible with other requirements. This could take a while.
+
+The conflict is caused by:
+    langchain 0.1.5 depends on langchain-core<0.2 and >=0.1.16
+    langchain-community 0.0.20 depends on langchain-core<0.2 and >=0.1.21
+    langchain-groq 0.1.3 depends on langchain-core<0.2.0 and >=0.1.45
+    langchain-huggingface 0.1.0 depends on langchain-core<0.4 and >=0.3.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip attempt to solve the dependency conflict
+
+ERROR: Cannot install -r /mount/src/business-directory-scraper/requirements.txt (line 1), -r /mount/src/business-directory-scraper/requirements.txt (line 2), -r /mount/src/business-directory-scraper/requirements.txt (line 3) and -r /mount/src/business-directory-scraper/requirements.txt (line 4) because these package versions have conflicting dependencies.
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.4/243.4 kB 9.9 MB/s eta 0:00:00[2025-11-18 02:54:15.155928] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 36.8 MB/s eta 0:00:00[2025-11-18 02:54:15.170751] 
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 16.8 MB/s eta 0:00:00[2025-11-18 02:54:15.256827] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.2
+    Uninstalling Pygments-2.19.2:
+      Successfully uninstalled Pygments-2.19.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.2.0
+    Uninstalling rich-14.2.0:
+      Successfully uninstalled rich-14.2.0
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.19.2 rich-14.2.0
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[02:54:19] ❗️ installer returned a non-zero exit code
+[02:56:06] 🖥 Provisioning machine...
+[02:56:12] 🎛 Preparing system...
+[02:56:12] 🚀 Starting up repository: 'business-directory-scraper', branch: 'main', main module: 'frontend/app.py'
+[02:56:12] 🐙 Cloning repository...
+[02:56:13] 🐙 Cloning into '/mount/src/business-directory-scraper'...
+
+[02:56:13] 🐙 Cloned repository!
+[02:56:13] 🐙 Pulling code changes from Github...
+[02:56:13] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+[02:56:14] ⛓ Spinning up manager process...
+  × No solution found when resolving dependencies:
+  ╰─▶ Because all of:
+          langchain-core>=0.1.45,<=0.1.46
+          langchain-core>=0.1.47,<=0.1.53
+      depend on langsmith>=0.1.0,<0.2.0 and only the following versions of
+      langchain-core are available:
+          langchain-core<=0.1.46
+          langchain-core>=0.1.47
+      we can conclude that langchain-core>=0.1.45,<0.2 depends on
+      langsmith>=0.1.0,<0.2.0.
+      And because langchain==0.1.5 depends on langsmith>=0.0.83,<0.1 and
+      langchain-groq==0.1.3 depends on langchain-core>=0.1.45,<0.2.0, we
+      can conclude that langchain==0.1.5 and langchain-groq==0.1.3 are
+      incompatible.
+      And because you require langchain==0.1.5 and langchain-groq==0.1.3, we
+      can conclude that your requirements are unsatisfiable.
+
+      hint: Pre-releases are available for langchain-core[2025-11-18 02:56:16.192669]  in the requested
+      range (e.g., 0.1.47rc1), but pre-releases weren't enabled (try:
+      `--prerelease=allow`)
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv[2025-11-18 02:56:16.238744] 
+Resolved 4 packages in 129ms
+Prepared [2025-11-18 02:56:16.519754] 4 packages[2025-11-18 02:56:16.520354]  [2025-11-18 02:56:16.520658] in 148ms[2025-11-18 02:56:16.520895] 
+Installed 4 packages in 15ms
+ + markdown-it-py==4.0.0[2025-11-18 02:56:16.537284] 
+ + mdurl==0.1.2
+ + pygments==2.19.2
+ + rich==14.2.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting langchain==0.1.5 (from -r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain-0.1.5-py3-none-any.whl.metadata (13 kB)
+Collecting langchain-community==0.0.20 (from -r /mount/src/business-directory-scraper/requirements.txt (line 2))
+  Downloading langchain_community-0.0.20-py3-none-any.whl.metadata (8.1 kB)
+Collecting langchain-groq==0.1.3 (from -r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading langchain_groq-0.1.3-py3-none-any.whl.metadata (2.8 kB)
+Collecting langchain-text-splitters==0.0.1 (from -r /mount/src/business-directory-scraper/requirements.txt (line 4))
+  Downloading langchain_text_splitters-0.0.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting streamlit>=1.28.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading streamlit-1.51.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting huggingface-hub>=0.17.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading huggingface_hub-1.1.4-py3-none-any.whl.metadata (13 kB)
+Collecting sentence-transformers>=2.2.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading sentence_transformers-5.1.2-py3-none-any.whl.metadata (16 kB)
+Collecting transformers>=4.30.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 8.5 MB/s eta 0:00:00[2025-11-18 02:56:19.305104] 
+Collecting requests>=2.31.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting beautifulsoup4>=4.12.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 10))
+  Downloading beautifulsoup4-4.14.2-py3-none-any.whl.metadata (3.8 kB)
+Collecting python-dotenv>=1.0.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 11))
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting selenium>=4.15.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading selenium-4.38.0-py3-none-any.whl.metadata (7.5 kB)
+Collecting PyYAML>=5.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting SQLAlchemy<3,>=1.4 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading sqlalchemy-2.0.44-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+Collecting aiohttp<4.0.0,>=3.8.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiohttp-3.13.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting dataclasses-json<0.7,>=0.5.7 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting jsonpatch<2.0,>=1.33 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-core<0.2,>=0.1.16 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain_core-0.1.53-py3-none-any.whl.metadata (5.9 kB)
+Collecting langsmith<0.1,>=0.0.83 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langsmith-0.0.92-py3-none-any.whl.metadata (9.9 kB)
+Collecting numpy<2,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 128.6 MB/s eta 0:00:00[2025-11-18 02:56:22.687625] 
+Collecting pydantic<3,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 kB 126.4 MB/s eta 0:00:00[2025-11-18 02:56:23.059345] 
+Collecting tenacity<9.0.0,>=8.1.0 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading tenacity-8.5.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting groq<1,>=0.4.1 (from langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading groq-0.34.1-py3-none-any.whl.metadata (16 kB)
+Collecting altair!=5.4.0,!=5.4.1,<6,>=4.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading altair-5.5.0-py3-none-any.whl.metadata (11 kB)
+Collecting blinker<2,>=1.5.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting cachetools<7,>=4.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading cachetools-6.2.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting click<9,>=7.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting packaging<26,>=20 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pandas<3,>=1.4.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.2/91.2 kB 126.9 MB/s eta 0:00:00[2025-11-18 02:56:24.306559] 
+Collecting pillow<13,>=7.1.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading pillow-12.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting protobuf<7,>=3.20 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading protobuf-6.33.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting pyarrow<22,>=7.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading pyarrow-21.0.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting toml<2,>=0.10.1 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting typing-extensions<5,>=4.4.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting watchdog<7,>=2.1.5 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.3/44.3 kB 122.6 MB/s eta 0:00:00[2025-11-18 02:56:25.674875] 
+Collecting gitpython!=3.1.19,<4,>=3.0.7 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading gitpython-3.1.45-py3-none-any.whl.metadata (13 kB)
+Collecting pydeck<1,>=0.8.0b4 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading pydeck-0.9.1-py2.py3-none-any.whl.metadata (4.1 kB)
+Collecting tornado!=6.5.0,<7,>=6.0.3 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading tornado-6.5.2-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.8 kB)
+Collecting filelock (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.2.0 (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading hf_xet-1.2.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting httpx<1,>=0.23.0 (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting shellingham (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting tqdm>=4.42.1 (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.7/57.7 kB 16.5 MB/s eta 0:00:00[2025-11-18 02:56:26.730064] 
+Collecting typer-slim (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading typer_slim-0.20.0-py3-none-any.whl.metadata (16 kB)
+Collecting torch>=1.11.0 (from sentence-transformers>=2.2.0->-r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading torch-2.9.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (30 kB)
+Collecting scikit-learn (from sentence-transformers>=2.2.0->-r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading scikit_learn-1.7.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting scipy (from sentence-transformers>=2.2.0->-r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading scipy-1.16.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 142.2 MB/s eta 0:00:00[2025-11-18 02:56:27.369977] 
+Collecting huggingface-hub>=0.17.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Collecting regex!=2019.12.17 (from transformers>=4.30.0->-r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading regex-2025.11.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 kB 127.3 MB/s eta 0:00:00[2025-11-18 02:56:28.736515] 
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers>=4.30.0->-r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting safetensors>=0.4.3 (from transformers>=4.30.0->-r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->-r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading charset_normalizer-3.4.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+Collecting idna<4,>=2.5 (from requests>=2.31.0->-r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.31.0->-r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests>=2.31.0->-r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading certifi-2025.11.12-py3-none-any.whl.metadata (2.5 kB)
+Collecting soupsieve>1.2 (from beautifulsoup4>=4.12.0->-r /mount/src/business-directory-scraper/requirements.txt (line 10))
+  Downloading soupsieve-2.8-py3-none-any.whl.metadata (4.6 kB)
+Collecting trio<1.0,>=0.31.0 (from selenium>=4.15.0->-r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading trio-0.32.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting trio-websocket<1.0,>=0.12.2 (from selenium>=4.15.0->-r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading trio_websocket-0.12.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting websocket-client<2.0,>=1.8.0 (from selenium>=4.15.0->-r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading websocket_client-1.9.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading multidict-6.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (13 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading yarl-1.22.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.1/75.1 kB 125.6 MB/s eta 0:00:00[2025-11-18 02:56:31.879797] 
+Collecting jinja2 (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema>=3.0 (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting narwhals>=1.14.2 (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading narwhals-2.12.0-py3-none-any.whl.metadata (11 kB)
+Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7,>=0.5.7->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading marshmallow-3.26.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7,>=0.5.7->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting gitdb<5,>=4.0.1 (from gitpython!=3.1.19,<4,>=3.0.7->streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting anyio<5,>=3.5.0 (from groq<1,>=0.4.1->langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading anyio-4.11.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting distro<2,>=1.7.0 (from groq<1,>=0.4.1->langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting sniffio (from groq<1,>=0.4.1->langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting jsonpointer>=1.9 (from jsonpatch<2.0,>=1.33->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+INFO: pip is looking at multiple versions of langchain-core to determine which version is compatible with other requirements. This could take a while.
+Collecting langchain-core<0.2,>=0.1.16 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain_core-0.1.52-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.51-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.50-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.49-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.48-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.47-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.46-py3-none-any.whl.metadata (5.9 kB)
+INFO: pip is still looking at multiple versions of langchain-core to determine which version is compatible with other requirements. This could take a while.
+  Downloading langchain_core-0.1.45-py3-none-any.whl.metadata (5.9 kB)
+ERROR: Cannot install -r /mount/src/business-directory-scraper/requirements.txt (line 1), -r /mount/src/business-directory-scraper/requirements.txt (line 2) and langchain because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.53 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.52 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.51 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.50 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.49 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.48 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.47 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.46 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.45 depends on langsmith<0.2.0 and >=0.1.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.4/243.4 kB 14.5 MB/s eta 0:00:00[2025-11-18 02:56:37.438395] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 117.1 MB/s eta 0:00:00[2025-11-18 02:56:37.458488] 
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 23.8 MB/s eta 0:00:00[2025-11-18 02:56:37.528412] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.2
+    Uninstalling Pygments-2.19.2:
+      Successfully uninstalled Pygments-2.19.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.2.0
+    Uninstalling rich-14.2.0:
+      Successfully uninstalled rich-14.2.0
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.19.2 rich-14.2.0
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[02:56:39] ❗️ installer returned a non-zero exit code
+[02:56:39] ❗️ Error during processing dependencies! Please fix the error and push an update, or try restarting the app.
+[02:56:39] 🐙 Pulling code changes from Github...
+[02:56:40] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+  × No solution found when resolving dependencies:[2025-11-18 02:56:40.868186] 
+  ╰─▶ Because all of:
+          langchain-core>=0.1.45,<=0.1.46
+          langchain-core>=0.1.47,<=0.1.53
+      depend on langsmith>=0.1.0,<0.2.0 and only the following versions of
+      langchain-core are available:
+          langchain-core<=0.1.46
+          langchain-core>=0.1.47
+      we can conclude that langchain-core>=0.1.45,<0.2 depends on
+      langsmith>=0.1.0,<0.2.0.
+      And because langchain==0.1.5 depends on langsmith>=0.0.83,<0.1 and
+      langchain-groq==0.1.3 depends on langchain-core>=0.1.45,<0.2.0, we
+      can conclude that langchain==0.1.5 and langchain-groq==0.1.3 are
+      incompatible.
+      And because you require langchain==0.1.5 and langchain-groq==0.1.3, we
+      can conclude that your requirements are unsatisfiable.
+
+      hint: Pre-releases are available for langchain-core in the requested
+      range (e.g., 0.1.47rc1), but pre-releases weren't enabled (try:
+      `--prerelease=allow`)
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+Audited 1 package in 1ms
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+──────────────────────────────────────── pip ───────────────────────────────────────────
+
+Using standard pip install.
+Collecting langchain==0.1.5 (from -r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain-0.1.5-py3-none-any.whl.metadata (13 kB)
+Collecting langchain-community==0.0.20 (from -r /mount/src/business-directory-scraper/requirements.txt (line 2))
+  Downloading langchain_community-0.0.20-py3-none-any.whl.metadata (8.1 kB)
+Collecting langchain-groq==0.1.3 (from -r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading langchain_groq-0.1.3-py3-none-any.whl.metadata (2.8 kB)
+Collecting langchain-text-splitters==0.0.1 (from -r /mount/src/business-directory-scraper/requirements.txt (line 4))
+  Downloading langchain_text_splitters-0.0.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting streamlit>=1.28.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading streamlit-1.51.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting huggingface-hub>=0.17.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading huggingface_hub-1.1.4-py3-none-any.whl.metadata (13 kB)
+Collecting sentence-transformers>=2.2.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading sentence_transformers-5.1.2-py3-none-any.whl.metadata (16 kB)
+Collecting transformers>=4.30.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading transformers-4.57.1-py3-none-any.whl.metadata (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.0/44.0 kB 8.4 MB/s eta 0:00:00[2025-11-18 02:56:43.617760] 
+Collecting requests>=2.31.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting beautifulsoup4>=4.12.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 10))
+  Downloading beautifulsoup4-4.14.2-py3-none-any.whl.metadata (3.8 kB)
+Collecting python-dotenv>=1.0.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 11))
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting selenium>=4.15.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading selenium-4.38.0-py3-none-any.whl.metadata (7.5 kB)
+Collecting PyYAML>=5.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting SQLAlchemy<3,>=1.4 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading sqlalchemy-2.0.44-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (9.5 kB)
+Collecting aiohttp<4.0.0,>=3.8.3 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiohttp-3.13.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting dataclasses-json<0.7,>=0.5.7 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting jsonpatch<2.0,>=1.33 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-core<0.2,>=0.1.16 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain_core-0.1.53-py3-none-any.whl.metadata (5.9 kB)
+Collecting langsmith<0.1,>=0.0.83 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langsmith-0.0.92-py3-none-any.whl.metadata (9.9 kB)
+Collecting numpy<2,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.0/61.0 kB 119.1 MB/s eta 0:00:00[2025-11-18 02:56:46.881404] 
+Collecting pydantic<3,>=1 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 kB 86.2 MB/s eta 0:00:00[2025-11-18 02:56:47.216406] 
+Collecting tenacity<9.0.0,>=8.1.0 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading tenacity-8.5.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting groq<1,>=0.4.1 (from langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading groq-0.34.1-py3-none-any.whl.metadata (16 kB)
+Collecting altair!=5.4.0,!=5.4.1,<6,>=4.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading altair-5.5.0-py3-none-any.whl.metadata (11 kB)
+Collecting blinker<2,>=1.5.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting cachetools<7,>=4.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading cachetools-6.2.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting click<9,>=7.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting packaging<26,>=20 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pandas<3,>=1.4.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.2/91.2 kB 140.7 MB/s eta 0:00:00[2025-11-18 02:56:48.273503] 
+Collecting pillow<13,>=7.1.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading pillow-12.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting protobuf<7,>=3.20 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading protobuf-6.33.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting pyarrow<22,>=7.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading pyarrow-21.0.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.3 kB)
+Collecting toml<2,>=0.10.1 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting typing-extensions<5,>=4.4.0 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting watchdog<7,>=2.1.5 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl.metadata (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.3/44.3 kB 119.5 MB/s eta 0:00:00[2025-11-18 02:56:49.625834] 
+Collecting gitpython!=3.1.19,<4,>=3.0.7 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading gitpython-3.1.45-py3-none-any.whl.metadata (13 kB)
+Collecting pydeck<1,>=0.8.0b4 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading pydeck-0.9.1-py2.py3-none-any.whl.metadata (4.1 kB)
+Collecting tornado!=6.5.0,<7,>=6.0.3 (from streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading tornado-6.5.2-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.8 kB)
+Collecting filelock (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading filelock-3.20.0-py3-none-any.whl.metadata (2.1 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.2.0 (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading hf_xet-1.2.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting httpx<1,>=0.23.0 (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting shellingham (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting tqdm>=4.42.1 (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.7/57.7 kB 153.9 MB/s eta 0:00:00[2025-11-18 02:56:50.437869] 
+Collecting typer-slim (from huggingface-hub>=0.17.0->-r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading typer_slim-0.20.0-py3-none-any.whl.metadata (16 kB)
+Collecting torch>=1.11.0 (from sentence-transformers>=2.2.0->-r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading torch-2.9.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (30 kB)
+Collecting scikit-learn (from sentence-transformers>=2.2.0->-r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading scikit_learn-1.7.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting scipy (from sentence-transformers>=2.2.0->-r /mount/src/business-directory-scraper/requirements.txt (line 7))
+  Downloading scipy-1.16.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.0/62.0 kB 115.6 MB/s eta 0:00:00[2025-11-18 02:56:51.224628] 
+Collecting huggingface-hub>=0.17.0 (from -r /mount/src/business-directory-scraper/requirements.txt (line 6))
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Collecting regex!=2019.12.17 (from transformers>=4.30.0->-r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading regex-2025.11.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 kB 138.4 MB/s eta 0:00:00[2025-11-18 02:56:52.420724] 
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers>=4.30.0->-r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting safetensors>=0.4.3 (from transformers>=4.30.0->-r /mount/src/business-directory-scraper/requirements.txt (line 8))
+  Downloading safetensors-0.6.2-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.31.0->-r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading charset_normalizer-3.4.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+Collecting idna<4,>=2.5 (from requests>=2.31.0->-r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting urllib3<3,>=1.21.1 (from requests>=2.31.0->-r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests>=2.31.0->-r /mount/src/business-directory-scraper/requirements.txt (line 9))
+  Downloading certifi-2025.11.12-py3-none-any.whl.metadata (2.5 kB)
+Collecting soupsieve>1.2 (from beautifulsoup4>=4.12.0->-r /mount/src/business-directory-scraper/requirements.txt (line 10))
+  Downloading soupsieve-2.8-py3-none-any.whl.metadata (4.6 kB)
+Collecting trio<1.0,>=0.31.0 (from selenium>=4.15.0->-r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading trio-0.32.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting trio-websocket<1.0,>=0.12.2 (from selenium>=4.15.0->-r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading trio_websocket-0.12.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting websocket-client<2.0,>=1.8.0 (from selenium>=4.15.0->-r /mount/src/business-directory-scraper/requirements.txt (line 12))
+  Downloading websocket_client-1.9.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading multidict-6.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading propcache-0.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (13 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp<4.0.0,>=3.8.3->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading yarl-1.22.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (75 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 75.1/75.1 kB 78.3 MB/s eta 0:00:00[2025-11-18 02:56:55.460366] 
+Collecting jinja2 (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema>=3.0 (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting narwhals>=1.14.2 (from altair!=5.4.0,!=5.4.1,<6,>=4.0->streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading narwhals-2.12.0-py3-none-any.whl.metadata (11 kB)
+Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7,>=0.5.7->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading marshmallow-3.26.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7,>=0.5.7->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting gitdb<5,>=4.0.1 (from gitpython!=3.1.19,<4,>=3.0.7->streamlit>=1.28.0->-r /mount/src/business-directory-scraper/requirements.txt (line 5))
+  Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting anyio<5,>=3.5.0 (from groq<1,>=0.4.1->langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading anyio-4.11.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting distro<2,>=1.7.0 (from groq<1,>=0.4.1->langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting sniffio (from groq<1,>=0.4.1->langchain-groq==0.1.3->-r /mount/src/business-directory-scraper/requirements.txt (line 3))
+  Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting jsonpointer>=1.9 (from jsonpatch<2.0,>=1.33->langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading jsonpointer-3.0.0-py2.py3-none-any.whl.metadata (2.3 kB)
+INFO: pip is looking at multiple versions of langchain-core to determine which version is compatible with other requirements. This could take a while.
+Collecting langchain-core<0.2,>=0.1.16 (from langchain==0.1.5->-r /mount/src/business-directory-scraper/requirements.txt (line 1))
+  Downloading langchain_core-0.1.52-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.51-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.50-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.49-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.48-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.47-py3-none-any.whl.metadata (5.9 kB)
+  Downloading langchain_core-0.1.46-py3-none-any.whl.metadata (5.9 kB)
+INFO: pip is still looking at multiple versions of langchain-core to determine which version is compatible with other requirements. This could take a while.
+  Downloading langchain_core-0.1.45-py3-none-any.whl.metadata (5.9 kB)
+ERROR: Cannot install -r /mount/src/business-directory-scraper/requirements.txt (line 1), -r /mount/src/business-directory-scraper/requirements.txt (line 2) and langchain because these package versions have conflicting dependencies.
+
+The conflict is caused by:
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.53 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.52 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.51 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.50 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.49 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.48 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.47 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.46 depends on langsmith<0.2.0 and >=0.1.0
+    langchain 0.1.5 depends on langsmith<0.1 and >=0.0.83
+    langchain-community 0.0.20 depends on langsmith<0.1 and >=0.0.83
+    langchain-core 0.1.45 depends on langsmith<0.2.0 and >=0.1.0
+
+To fix this you could try to:
+1. loosen the range of package versions you've specified
+2. remove package versions to allow pip attempt to solve the dependency conflict
+
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Checking if Streamlit is installed
+Installing rich for an improved exception logging
+Using standard pip install.
+Collecting rich>=10.14.0
+  Downloading rich-14.2.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.14.0)
+  Downloading markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.14.0)
+  Downloading pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.14.0)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading rich-14.2.0-py3-none-any.whl (243 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 243.4/243.4 kB 15.7 MB/s eta 0:00:00[2025-11-18 02:57:01.074330] 
+Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 kB 125.8 MB/s eta 0:00:00[2025-11-18 02:57:01.087707] 
+Downloading pygments-2.19.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 66.8 MB/s eta 0:00:00[2025-11-18 02:57:01.118744] 
+Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Installing collected packages: pygments, mdurl, markdown-it-py, rich
+  Attempting uninstall: pygments
+    Found existing installation: Pygments 2.19.2
+    Uninstalling Pygments-2.19.2:
+      Successfully uninstalled Pygments-2.19.2
+  Attempting uninstall: mdurl
+    Found existing installation: mdurl 0.1.2
+    Uninstalling mdurl-0.1.2:
+      Successfully uninstalled mdurl-0.1.2
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 4.0.0
+    Uninstalling markdown-it-py-4.0.0:
+      Successfully uninstalled markdown-it-py-4.0.0
+  Attempting uninstall: rich
+    Found existing installation: rich 14.2.0
+    Uninstalling rich-14.2.0:
+      Successfully uninstalled rich-14.2.0
+Successfully installed markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.19.2 rich-14.2.0
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[02:57:04] ❗️ installer returned a non-zero exit code
+[02:58:09] 🐙 Pulling code changes from Github...
+[02:58:09] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+Resolved 128 packages in 869ms
+[02:59:03] 🖥 Provisioning machine...
+[02:59:09] 🎛 Preparing system...
+[02:59:08] 🚀 Starting up repository: 'business-directory-scraper', branch: 'main', main module: 'frontend/app.py'
+[02:59:08] 🐙 Cloning repository...
+[02:59:09] 🐙 Cloning into '/mount/src/business-directory-scraper'...
+
+[02:59:09] 🐙 Cloned repository!
+[02:59:09] 🐙 Pulling code changes from Github...
+[02:59:09] 📦 Processing dependencies...
+
+──────────────────────────────────────── uv ───────────────────────────────────────────
+
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+[02:59:11] ⛓ Spinning up manager process...
+Resolved 128 packages in 2.46s
+Prepared 128 packages in 1m 21s
+Installed 128 packages in 5.28s
+ + aiohappyeyeballs==2.6.1
+ + aiohttp==3.13.2
+ + aiosignal==1.4.0
+ + altair==5.5.0
+ + annotated-types==0.7.0
+ + anyio==4.11.0
+ + attrs==25.4.0
+ + beautifulsoup4==4.14.2
+ + blinker==1.9.0
+ + cachetools==6.2.2
+ + certifi==2025.11.12
+ + charset-normalizer==3.4.4
+ + click==8.3.1
+ + dataclasses-json==0.6.7
+ + distro==1.9.0
+ + filelock==3.20.0
+ + frozenlist==1.8.0
+ + fsspec==2025.10.0
+ + gitdb==4.0.12
+ + gitpython==3.1.45
+ + greenlet==3.2.4
+ + groq==0.34.1
+ + h11==0.16.0
+ + hf-xet==1.2.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + httpx-sse==0.4.3
+ + huggingface-hub==0.36.0
+ + idna==3.11
+ + jinja2==3.1.6
+ + joblib==1.5.2
+ + jsonpatch==1.33
+ + jsonpointer==3.0.0
+ + jsonschema==4.25.1
+ + jsonschema-specifications==2025.9.1
+ + langchain==1.0.7
+ + langchain-classic==1.0.0
+ + langchain-community==0.4.1
+ + langchain-core==1.0.5
+ + langchain-groq==1.0.1
+ + langchain-text-splitters==1.0.0
+ + langgraph==1.0.3
+ + langgraph-checkpoint==3.0.1
+ + langgraph-prebuilt==1.0.4
+ + langgraph-sdk==0.2.9
+ + langsmith==0.4.43
+ + markupsafe==3.0.3
+ + marshmallow==3.26.1
+ + mpmath==1.3.0
+ + multidict==6.7.0
+ + mypy-extensions==1.1.0
+ + narwhals==2.12.0
+ + networkx==3.5
+ + numpy==2.3.5
+ + nvidia-cublas-cu12==12.8.4.1
+ + nvidia-cuda-cupti-cu12==12.8.90
+ + nvidia-cuda-nvrtc-cu12==12.8.93
+ + nvidia-cuda-runtime-cu12==12.8.90
+ + nvidia-cudnn-cu12==9.10.2.21
+ + nvidia-cufft-cu12==11.3.3.83
+ + nvidia-cufile-cu12==1.13.1.3
+ + nvidia-curand-cu12==10.3.9.90
+ + nvidia-cusolver-cu12==11.7.3.90
+ + nvidia-cusparse-cu12==12.5.8.93
+ + nvidia-cusparselt-cu12==0.7.1
+ + nvidia-nccl-cu12==2.27.5
+ + nvidia-nvjitlink-cu12==12.8.93
+ + nvidia-nvshmem-cu12==3.3.20
+ + nvidia-nvtx-cu12==12.8.90
+ + orjson==3.11.4
+ + ormsgpack==1.12.0
+ + outcome==1.3.0.post0
+ + packaging==25.0
+ + pandas==2.3.3
+ + pillow==12.0.0
+ + propcache==0.4.1
+ + protobuf==6.33.1
+ + pyarrow==21.0.0
+ + pydantic==2.12.4
+ + pydantic-core==2.41.5
+ + pydantic-settings==2.12.0
+ + pydeck==0.9.1
+ + pysocks==1.7.1
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.2.1
+ + pytz==2025.2
+ + pyyaml==6.0.3
+ + referencing==0.37.0
+ + regex==2025.11.3
+ + requests==2.32.5
+ + requests-toolbelt==1.0.0
+ + rpds-py==0.29.0
+ + safetensors==0.6.2
+ + scikit-learn==1.7.2
+ + scipy==1.16.3
+ + selenium==4.38.0
+ + sentence-transformers==5.1.2
+ + setuptools==80.9.0
+ + six==1.17.0
+ + smmap==5.0.2
+ + sniffio==1.3.1
+ + sortedcontainers==2.4.0
+ + soupsieve==2.8
+ + sqlalchemy==2.0.44
+ + streamlit==1.51.0
+ + sympy==1.14.0
+ + tenacity==9.1.2
+ + threadpoolctl==3.6.0
+ + tokenizers==0.22.1
+ + toml==0.10.2
+ + [2025-11-18 03:00:39.413805] torch==2.9.1
+ + tornado==6.5.2
+ + tqdm==4.67.1
+ + transformers==4.57.1
+ + trio==0.32.0
+ + trio-websocket==0.12.2
+ + triton==3.5.1
+ + typing-extensions==4.15.0
+ + typing-inspect==0.9.0
+ + typing-inspection==0.4.2
+ + tzdata[2025-11-18 03:00:39.414090] ==2025.2
+ + urllib3==2.5.0
+ + watchdog==6.0.0
+ + websocket-client==1.9.0
+ + wsproto[2025-11-18 03:00:39.414306] ==1.3.1
+ + xxhash==3.6.0
+ + yarl==1.22.0
+ + zstandard==0.25.0
+Checking if Streamlit is installed
+Found Streamlit version 1.51.0 in the environment
+Installing rich for an improved exception logging
+Using uv pip install.
+Using Python 3.12.12 environment at /home/adminuser/venv
+Resolved [2025-11-18 03:00:45.876438] 4 packages[2025-11-18 03:00:45.876856]  [2025-11-18 03:00:45.877170] in 1.32s[2025-11-18 03:00:45.877496] 
+Prepared [2025-11-18 03:00:46.718897] 4 packages[2025-11-18 03:00:46.719234]  [2025-11-18 03:00:46.719557] in 839ms[2025-11-18 03:00:46.719902] 
+Installed [2025-11-18 03:00:46.810285] 4 packages[2025-11-18 03:00:46.810670]  [2025-11-18 03:00:46.811072] in 79ms[2025-11-18 03:00:46.811429] 
+ [2025-11-18 03:00:46.812280] +[2025-11-18 03:00:46.812614]  [2025-11-18 03:00:46.812957] markdown-it-py[2025-11-18 03:00:46.813374] ==[2025-11-18 03:00:46.813720] 4.0.0[2025-11-18 03:00:46.814137] 
+ [2025-11-18 03:00:46.817827] +[2025-11-18 03:00:46.818304]  [2025-11-18 03:00:46.818613] mdurl[2025-11-18 03:00:46.818969] ==[2025-11-18 03:00:46.819298] 0.1.2[2025-11-18 03:00:46.819628] 
+ [2025-11-18 03:00:46.820801] +[2025-11-18 03:00:46.821136]  [2025-11-18 03:00:46.821527] pygments[2025-11-18 03:00:46.821910] ==[2025-11-18 03:00:46.822324] 2.19.2[2025-11-18 03:00:46.822700] 
+ + rich==14.2.0
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+[03:00:47] 🐍 Python dependencies were installed from /mount/src/business-directory-scraper/requirements.txt using uv.
+Check if streamlit is installed
+Streamlit is already installed
+[03:00:48] 📦 Processed dependencies!
+[03:00:51] 🐙 Pulling code changes from Github...
+
+      👋 Welcome to Streamlit!
+
+      If you'd like to receive helpful onboarding emails, news, offers, promotions,
+      and the occasional swag, please enter your email address below. Otherwise,
+      leave this field blank.
+
+[03:00:51] ❗️ The service has encountered an error while checking the health of the Streamlit app: Get "http://localhost:8501/healthz": dial tcp 127.0.0.1:8501: connect: connection refused
+[03:00:51] 📦 Processing dependencies...
+[03:00:51] 📦 Processed dependencies!
+[03:00:54] 🔄 Updated app!
