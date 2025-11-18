@@ -195,18 +195,15 @@ def scrape_business_directory(url: str, max_businesses: int = 20, api_key: str =
         if len(unique_businesses) >= max_businesses:
             break  # Stop if we have enough
         try:
-            if SELENIUM_AVAILABLE:
-                loader = SeleniumURLLoader(urls=[page_url])
-                documents = loader.load()
-            else:
-                headers = {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-                }
-                loader = WebBaseLoader(page_url, requests_kwargs={"headers": headers})
-                documents = loader.load()
-            if not documents or len(documents[0].page_content.strip()) <= 500:
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+            }
+            response = requests.get(page_url, headers=headers, timeout=10)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, "html.parser")
+            text = soup.get_text()
+            if len(text.strip()) <= 500:
                 continue  # Skip pages with insufficient content
-            text = documents[0].page_content
             if len(text.strip()) < 500:  # Lower threshold to include main pages
                 continue
             try:
