@@ -188,6 +188,7 @@ def scrape_business_directory(url: str, max_businesses: int = 20, api_key: str =
         if len(unique_businesses) >= max_businesses:
             break  # Stop if we have enough
         try:
+            print(f"Loading page: {page_url}")
             headers = {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
             }
@@ -195,12 +196,14 @@ def scrape_business_directory(url: str, max_businesses: int = 20, api_key: str =
             response.raise_for_status()
             soup = BeautifulSoup(response.content, "html.parser")
             text = soup.get_text()
+            print(f"Page loaded, text length: {len(text)}")
             if len(text.strip()) <= 500:
+                print("Skipping page with insufficient content")
                 continue  # Skip pages with insufficient content
-            if len(text.strip()) < 500:  # Lower threshold to include main pages
-                continue
             try:
+                print(f"Calling LLM for {page_url}")
                 result = chain.invoke({"context": text}).content
+                print(f"LLM response length: {len(result)}")
             except Exception as e:
                 print(f"LLM extraction failed for {page_url}: {e}")
                 result = "Error extracting data from page."
