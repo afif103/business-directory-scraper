@@ -6,8 +6,19 @@ import os
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from backend.scraper import scrape_business_directory
 
-# Get API key from env
-api_key = os.getenv("GROQ_API_KEY")
+# Get API key from secrets or env
+try:
+    api_key = st.secrets.get("GROQ_API_KEY")
+except FileNotFoundError:
+    api_key = None
+if not api_key:
+    api_key = os.getenv("GROQ_API_KEY")
+
+# Debug: Show if API key is set
+if not api_key:
+    st.error("❌ GROQ_API_KEY not found. Please set it in Streamlit Cloud secrets.")
+else:
+    st.success("✅ API Key loaded successfully.")
 
 # Custom CSS for colors
 st.markdown(
