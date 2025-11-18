@@ -25,5 +25,5 @@ chroma_db/
 .env
 .DS_Store
 *.tmp
-business_directory_scraper.md
+business_directory_scraper.md.txt
 PROJECT_CONTEXT.md.txt

@@ -2,11 +2,16 @@ import streamlit as st
 import pandas as pd
 import sys
 import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from backend.scraper import scrape_business_directory
 
+# Get API key from env
+api_key = os.getenv("GROQ_API_KEY")
+
 # Custom CSS for colors
-st.markdown("""
+st.markdown(
+    """
 <style>
     .main-header {
         color: #FF6B6B;
@@ -36,38 +41,61 @@ st.markdown("""
         border: 2px solid #4ECDC4;
     }
 </style>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
-st.markdown('<div class="main-header">🏢 Business Directory Scraper 🏢</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-header">Extract business info from directories with AI magic! ✨</div>', unsafe_allow_html=True)
+st.markdown(
+    '<div class="main-header">🏢 Business Directory Scraper 🏢</div>',
+    unsafe_allow_html=True,
+)
+st.markdown(
+    '<div class="sub-header">Extract business info from directories with AI magic! ✨</div>',
+    unsafe_allow_html=True,
+)
 
-st.markdown("🔗 Enter the URL of a business directory to scrape and extract business information.")
+st.markdown(
+    "🔗 Enter the URL of a business directory to scrape and extract business information."
+)
 
 url = st.text_input("Directory URL", placeholder="https://example.com/directory")
+
+max_businesses = st.selectbox(
+    "Maximum businesses to extract",
+    options=[10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 150, 200],
+    index=0,  # Default to 10
+    help="Select how many businesses to try to extract (more may take longer)",
+)
 
 if st.button("🚀 Scrape Directory"):
     if url:
         with st.spinner("🔍 Scraping and extracting data... Please wait!"):
             try:
-                data = scrape_business_directory(url)
+                data = scrape_business_directory(
+                    url, max_businesses=max_businesses, api_key=api_key
+                )
                 if isinstance(data, list) and data:
                     df = pd.DataFrame(data)
-                    st.success("✅ Scraping completed! Found {} businesses.".format(len(data)))
+                    st.success(
+                        "✅ Scraping completed! Found {} businesses.".format(len(data))
+                    )
                     st.balloons()
                     st.dataframe(df, use_container_width=True)
                     csv = df.to_csv(index=False)
                     st.download_button(
                         label="📥 Download CSV",
                         data=csv,
-                        file_name='businesses.csv',
-                        mime='text/csv',
-                        key='download-csv'
+                        file_name="businesses.csv",
+                        mime="text/csv",
+                        key="download-csv",
                     )
                 elif isinstance(data, str) and data.strip():
                     st.success("✅ Scraping completed! Raw data extracted.")
                     st.text_area("Extracted Business Information", data, height=300)
                     # For CSV, perhaps add a note
-                    st.info("💡 Raw text extracted. CSV export not available for raw data.")
+                    st.info(
+                        "💡 Raw text extracted. This may indicate extraction issues. Try a different URL or lower limit."
+                    )
                 else:
                     st.warning("⚠️ No businesses found. Try a different URL.")
             except Exception as e:
